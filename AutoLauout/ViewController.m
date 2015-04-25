@@ -49,11 +49,11 @@
 
 #pragma mark - override size class
 
--(void)changeVerticalSizeClassTo:(UIUserInterfaceSizeClass)class buttonSpace:(CGFloat)space {
+-(void)changeVerticalSizeClassTo:(UIUserInterfaceSizeClass)sizeClass buttonSpace:(CGFloat)space {
     [UIView animateWithDuration:22 animations:
      ^{
         UITraitCollection *horicontalCompact =
-        [UITraitCollection traitCollectionWithVerticalSizeClass:class];
+        [UITraitCollection traitCollectionWithVerticalSizeClass:sizeClass];
         [self setOverrideTraitCollection:horicontalCompact
                   forChildViewController:self.childViewController];
         self.bottonConstraint.constant = space;
