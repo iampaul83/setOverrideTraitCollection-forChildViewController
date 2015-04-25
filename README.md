@@ -8,6 +8,8 @@ SizeClass很好用，這個範例將使用SizeClass設定兩組layout，並用�
 > * wAny hAny
 >![wAny hAny][]
 
+----------
+
 > * wAny hCompact
 >![wAny hCompact][]
 
