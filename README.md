@@ -1,6 +1,8 @@
 
 #強制切換SizeClass
 
+SizeClass很好用，這個範例將使用SizeClass設定兩組layout，並用成程式手動強制切換預設的SizeClass*（在regular height的環境切換成compact height）*
+
 ##Storyboard
 設定好AutoLayout與SizeClass，由於要使用[setOverrideTraitCollection:forChildViewController:]，代表必須由一個上層的**UIViewController**去控制下面的**ChildViewController**，我的設定如下：
 > * wAny hAny
