@@ -81,13 +81,9 @@
 		A0550FB01AE8BCEE000625C9 /* AutoLauout */ = {
 			isa = PBXGroup;
 			children = (
-				A0550FB51AE8BCEE000625C9 /* AppDelegate.h */,
-				A0550FB61AE8BCEE000625C9 /* AppDelegate.m */,
+				A0550FBB1AE8BCEE000625C9 /* Main.storyboard */,
 				A0550FB81AE8BCEE000625C9 /* ViewController.h */,
 				A0550FB91AE8BCEE000625C9 /* ViewController.m */,
-				A0550FBB1AE8BCEE000625C9 /* Main.storyboard */,
-				A0550FBE1AE8BCEE000625C9 /* Images.xcassets */,
-				A0550FC01AE8BCEE000625C9 /* LaunchScreen.xib */,
 				A0550FB11AE8BCEE000625C9 /* Supporting Files */,
 			);
 			path = AutoLauout;
@@ -96,6 +92,10 @@
 		A0550FB11AE8BCEE000625C9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A0550FC01AE8BCEE000625C9 /* LaunchScreen.xib */,
+				A0550FBE1AE8BCEE000625C9 /* Images.xcassets */,
+				A0550FB51AE8BCEE000625C9 /* AppDelegate.h */,
+				A0550FB61AE8BCEE000625C9 /* AppDelegate.m */,
 				A0550FB21AE8BCEE000625C9 /* Info.plist */,
 				A0550FB31AE8BCEE000625C9 /* main.m */,
 			);
@@ -418,6 +418,7 @@
 				A0550FD31AE8BCEE000625C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0550FD41AE8BCEE000625C9 /* Build configuration list for PBXNativeTarget "AutoLauoutTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +427,7 @@
 				A0550FD61AE8BCEE000625C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
