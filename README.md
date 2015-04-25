@@ -48,8 +48,7 @@ SizeClass很好用，這個範例將使用SizeClass設定兩組layout，並用�
 ####1. UIKeyboardWillShowNotification: 切換到Compact
 #####使用**UIKeyboardFrameEndUserInfoKey**取得鍵盤高度
 ```objc
-NSValue *rectValue = 
-	keyboardNotification.userInfo[UIKeyboardFrameEndUserInfoKey];
+NSValue *rectValue = keyboardNotification.userInfo[UIKeyboardFrameEndUserInfoKey];
 CGRect keyboardFrame = rectValue.CGRectValue;
 CGFloat keyboardHeight = keyboardFrame.size.height;
 ```
