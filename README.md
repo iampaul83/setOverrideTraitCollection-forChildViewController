@@ -18,7 +18,7 @@ SizeClass很好用，這個範例將使用SizeClass設定兩組layout，並用�
 ##切換SizeClass
 
 ###在Regular的SizeClass使用Compact的layout
-```
+```objc
 //duration不管設多少好像都一樣，不知道為什麼？
 [UIView animateWithDuration:22 animations:
 ^{
@@ -45,14 +45,14 @@ SizeClass很好用，這個範例將使用SizeClass設定兩組layout，並用�
 
 ####1. UIKeyboardWillShowNotification: 切換到Compact
 #####使用**UIKeyboardFrameEndUserInfoKey**取得鍵盤高度
-```
+```objc
 NSValue *rectValue = 
 	keyboardNotification.userInfo[UIKeyboardFrameEndUserInfoKey];
 CGRect keyboardFrame = rectValue.CGRectValue;
 CGFloat keyboardHeight = keyboardFrame.size.height;
 ```
 #####用鍵盤高度設定container view的constraint
-```
+```objc
 self.bottomConstraint.constant = keyboardHeight;
 ```
 
@@ -68,7 +68,7 @@ self.bottomConstraint.constant = keyboardHeight;
 2. 預設會自動附帶一個**embed segue**與一個**UIViewController**
 3. 設定**embed segue**的**identifier**
 4. 在ViewController裡
-```
+```objc
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"container"]) {
         self.childViewController = segue.destinationViewController;
