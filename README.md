@@ -25,8 +25,7 @@ SizeClass很好用，這個範例將使用SizeClass設定兩組layout，並用�
 [UIView animateWithDuration:22 animations:
 ^{
 	UIUserInterfaceSizeClass sizeClass = UIUserInterfaceSizeClassCompact;
-	UITraitCollection *horicontalCompact =
-	[UITraitCollection traitCollectionWithVerticalSizeClass:sizeClass];
+	UITraitCollection *horicontalCompact = [UITraitCollection traitCollectionWithVerticalSizeClass:sizeClass];
 	[self setOverrideTraitCollection:horicontalCompact
 			  forChildViewController:self.childViewController];
 	self.bottomConstraint.constant = space;
