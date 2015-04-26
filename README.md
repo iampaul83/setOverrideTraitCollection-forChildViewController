@@ -19,7 +19,7 @@ SizeClass很好用，這個範例將使用SizeClass設定兩組layout，並用�
 
 ##切換SizeClass
 
-###在Regular的SizeClass使用Compact的layout
+* 在Regular的SizeClass使用Compact的layout
 ```objc
 //duration不管設多少好像都一樣，不知道為什麼？
 [UIView animateWithDuration:22 animations:
@@ -33,7 +33,7 @@ SizeClass很好用，這個範例將使用SizeClass設定兩組layout，並用�
 	[self.view layoutIfNeeded];
 }];
 ```
-###回復預設
+* 回復預設
 強制切換之後要回復預設，則使用相同方式，把SizeClass指定為**UIUserInterfaceSizeClassUnspecified**
 
 
